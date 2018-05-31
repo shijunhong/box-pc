@@ -1,0 +1,21 @@
+@-webkit-keyframes rotate{
+    0%, to{
+        -webkit-transform: rotate3d(0);
+                transform: rotate3d(0)
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+    }
+}
+@keyframes rotate{
+    0%, to{
+        -webkit-transform: rotate3d(0);
+                transform: rotate3d(0)
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+    }
+}
+/*# sourceMappingURL=css.bb4ce5.css.map*/

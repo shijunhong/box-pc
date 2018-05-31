@@ -1,0 +1,97 @@
+@import url('var.less');
+body{
+	font-family: 'Hiragino Sans GB',Arial,"Microsoft YaHei","Source Sans Pro","Helvetica Neue",Helvetica,sans-serif;
+	-webkit-font-smoothing: subpixel-antialiased; background: #f0f2f5;
+}
+
+dl, ol, ul{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	color: #000;
+}
+a:link, a:visited{
+	text-decoration: none;
+}
+img{
+	height: auto;
+}
+
+::-webkit-scrollbar-thumb {outline-offset: -2px;outline: 2px solid #fff;border-radius: 0px;border: 2px solid #fff;background-color: #bbd;}
+::-webkit-scrollbar-thumb:hover {background-color: #50506d; border-radius: 4px; }
+::-webkit-scrollbar {width: 8px;height: 8px;}
+::-webkit-scrollbar-track-piece { background-color: #fff; border-radius: 0; }
+
+// antd 样式覆盖
+.ant-dropdown-menu-item:hover, .ant-dropdown-menu-submenu-title:hover {
+    background-color: #f0f0f0;
+}
+
+.text-right{
+  text-align: right!important;
+}
+.text-left{
+  text-align: left!important;
+}
+.text-center{
+  text-align: center!important;
+}
+.pull-right{
+	float: right;
+}
+.pull-left{
+	float: left;
+}
+.hide{
+	display: none;
+}
+.hidden{
+	visibility: hidden;
+}
+
+.color999{
+	color: #999;
+}
+.color000{
+	color: #000;
+}
+.colorf75{
+	color: #ff7557;
+}
+.theme-color{
+	color: @dhb-theme-color;
+}
+.ellipsis{
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.padding-normal{
+	padding: 16px;
+}
+.pointer{
+	cursor: pointer;
+}
+.ant-modal-title{
+	color: #000;
+}
+
+.list-link{
+	color: #4A90E2;
+}
+.icon-btn{
+	min-width: 48px;
+	margin-right: 10px;
+}
+.logo {
+	width: 120px;
+	height: 31px;
+	background: rgba(255,255,255,.2);  
+	margin: 16px 28px 16px 0;
+	float: left;
+}

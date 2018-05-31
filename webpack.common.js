@@ -49,8 +49,8 @@ if (pkg.theme && typeof(pkg.theme) === 'string') {
 module.exports = {
 	// entry: path.join(__dirname, 'src/index.js'),
 	entry: {
-		app: path.join(__dirname, 'src/main.js'),
-		vendor: ['react', 'react-router-dom', 'redux', 'react-dom', 'react-redux']*/
+		app: path.join(__dirname, 'src/main.js')
+		/*vendor: ['react', 'react-router-dom', 'redux', 'react-dom', 'react-redux']*/
 	},
 	output: {
 		path: path.join(__dirname, 'dist'),
@@ -184,9 +184,9 @@ module.exports = {
 		new copyWebpackPlugin([{
 			from: 'src/assets/static', to: 'assets/static'
 		}]),
-		new copyWebpackPlugin([{
+		/* new copyWebpackPlugin([{
 			from: 'src/login.html'
-		}])
+		}]) */
 
 		/*new webpack.LoaderOptionsPlugin({  
             options: {  

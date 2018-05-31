@@ -1,0 +1,12 @@
+.idea
+.vscode
+/node_modules
+/dll
+.DS_Store
+
+/typings
+/src/app/*.js
+/src/**/*.js.map
+npm-debug.log
+npm-debug.log.*
+

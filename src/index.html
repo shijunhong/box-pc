@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit">
+	<title></title>
+	<!--[if lt IE 9]>
+		<script>
+			window.location.href="http://public.newdhb.com/brower.html";
+		</script>
+    <![endif]-->
+
+<script>
+	var HOST = window.location.host;
+	var link = document.createElement('link');
+	link.rel = "shortcut icon";
+	if(HOST.indexOf('m.dhb168.com') === -1){
+		HOST = HOST.split('.')
+		HOST.shift()
+		HOST = HOST.join('.')
+		
+		link.href = 'https://static.dhb168.com/brand/' + HOST + '/favicon.ico'
+	}else{
+		link.href = "favicon.ico"
+	}
+	document.head.appendChild(link);
+</script>
+</head>
+<body>
+	<div id="init-sys" class="init-sys">
+		<div><img src="assets/static/loading.png" alt=""></div>
+		<div>系统初始化中，请稍后...</div>
+	</div>
+	<div id="app"></div>
+</body>
+</html>

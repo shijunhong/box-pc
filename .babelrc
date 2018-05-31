@@ -3,7 +3,7 @@
      "react",
      ["env",{
         "targets": {
-        "browsers": ["ie>=9", "last 2 versions"]
+        "browsers": ["ie>=10", "last 2 versions"]
       }
      }],
      "stage-0"

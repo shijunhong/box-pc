@@ -37,7 +37,7 @@ export default class App extends Component {
         return (
             <div>
             	<Layout>
-					<Header className="header">
+					<Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
 					<div className="logo" />
 					<Menu
 						theme="dark"
@@ -51,7 +51,7 @@ export default class App extends Component {
 					</Menu>
 					</Header>
 					<Layout>
-					<Sider width={200} style={{ background: '#fff' }}>
+					<Sider width={200} style={{ overflow: 'auto', height: '100%', position: 'fixed', top: 64, left: 0, background: '#fff' }}>
 						<Menu
 						mode="inline"
 						defaultSelectedKeys={['1']}
@@ -78,7 +78,7 @@ export default class App extends Component {
 						</SubMenu>
 						</Menu>
 					</Sider>
-					<Layout style={{ padding: '0 24px 24px' }}>
+					<Layout  style={{ marginLeft: 200, marginTop: 64, padding: '0 24px 24px' }}>
 						<Breadcrumb style={{ margin: '16px 0' }}>
 						<Breadcrumb.Item>Home</Breadcrumb.Item>
 						<Breadcrumb.Item>List</Breadcrumb.Item>

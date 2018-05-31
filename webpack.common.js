@@ -94,8 +94,7 @@ module.exports = {
 			test: /\.(js|jsx)$/,
 			//use: ['babel-loader?cacheDirectory=true'],
 			loader: require.resolve('babel-loader'),
-			include: [path.join(__dirname, 'src')],
-			exclude: /NIM_Web_SDK.*\.js/,
+			include: [path.join(__dirname, 'src')]
 		},{
 			test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
 			use: [{
